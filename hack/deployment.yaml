@@ -17,7 +17,8 @@ spec:
         app: webhook
     spec:
       containers:
-      - image: some-image
+      - image: ghcr.io/dhaus67/webhook/main-fad58de7366495db4650cfefac2fcd61:latest
+        imagePullPolicy: Always
         command:
           - serve
         name: some-image
