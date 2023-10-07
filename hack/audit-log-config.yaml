@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  configs.yaml: |
+    name: ACS audit log
+    generic:
+      endpoint: http://webhook.stackrox.default.svc:8080/hook/acs-audit-log
+      skipTLSVerify: true
+      auditLoggingEnabled: true
+kind: ConfigMap
+metadata:
+  name: declarative-configurations
+  namespace: stackrox
