@@ -3,7 +3,7 @@ data:
   configs.yaml: |
     name: ACS audit log
     generic:
-      endpoint: http://webhook.stackrox.default.svc:8080/hook/acs-audit-log
+      endpoint: http://webhook.stackrox.svc.cluster.local:8080/hook/acs-audit-log
       skipTLSVerify: true
       auditLoggingEnabled: true
 kind: ConfigMap

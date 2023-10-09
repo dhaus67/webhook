@@ -30,6 +30,7 @@ metadata:
   labels:
     app: webhook
   name: webhook
+  namespace: stackrox
 spec:
   ports:
     - name: 8080-8080
